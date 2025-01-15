@@ -13,11 +13,14 @@ public class UFC {
             l[3] = new Lutador("Pedro Pedra", "Holanda", 25, 1.69f, 79.5f, 2, 9, 4);
             l[4] = new Lutador("Wagner Porrada", "Alemanha", 30, 1.87f, 90.2f, 22, 4, 3);
         
-        l[0].apresentar();
-        l[1].apresentar();
-        l[2].apresentar();
-        l[3].apresentar();
-        l[4].apresentar();
+        Luta UFC01 = new Luta();
+        UFC01.marcarLuta(l[0], l[1]);
+        UFC01.lutar();
+        
+        l[0].Status();
+        l[1].Status();
+        
+        
     }
-    
+  
 }
